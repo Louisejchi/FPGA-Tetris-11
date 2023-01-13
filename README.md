@@ -5,7 +5,7 @@
 
 ![](https://i.imgur.com/TB5e92S.png)
 
-* 7-seg 顯示器 : 紀錄得分
+* 7-SEG 顯示器 : 紀錄得分
 
 ![](https://i.imgur.com/9qKx0o8.png)
 
@@ -29,15 +29,15 @@ module Tetris(
                     pause, // 暫停
                     CLK, // 時脈
               output reg [0:7] LED_R, LED_G, LED_B , // 控制亮燈 : 紅燈、綠燈、藍燈
-              output reg [6:0] seg7, // 7-seg : 顯示數字
-              output reg [3:0] COMM, COM, // 控制亮燈 : 8x8 LED 排數、7-seg 位數
+              output reg [6:0] seg7, // 7-SEG : 顯示數字
+              output reg [3:0] COMM, COM, // 控制亮燈 : 8x8 LED 排數、7-SEG 位數
               output beep // 控制音樂
 );
 ```
 I/O 變數連接 FPGA I/O 裝置
 |  I/O   | left、right、rotation | LED_R、LED_G、 LED_B、COMM | seg7、COM | beep | pause |
 | --------  | -------------------- | -------------------------- | -------- | ---- | ----|
-| FPGA I/O  |  4 BITS SW  |  8X8 LED   |    7-seg |  BEEP | 8 DIPSW|
+| FPGA I/O  |  4 BITS SW  |  8X8 LED   |    7-SEG |  BEEP | 8 DIPSW|
 
 
 
@@ -77,8 +77,8 @@ module divfreqForStart (
 module score( 	
              input [13:0] count, // 得分
              input CLK, // 時脈
-             output reg [6:0] seg7, // 7-seq 顯示分數
-             output reg [3:0] COM // 7-seq 可亮位數
+             output reg [6:0] seg7, // 7-SEG 顯示分數
+             output reg [3:0] COM // 7-SEG 可亮位數
 ); 
 ```
 > 顯示得分用的除頻器
