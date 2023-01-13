@@ -1,14 +1,16 @@
-[toc]
 # FPGA-Tetris-11th
 ## Authors: 110321026 110321059 110321068
 ### Input/Output unit:
 * 8x8 LED 矩陣 : 遊戲畫面(包含開始、方塊狀態、結束)
+
 ![](https://i.imgur.com/TB5e92S.png)
 
 * 7-seg 顯示器 : 紀錄得分
+
 ![](https://i.imgur.com/9qKx0o8.png)
 
 * BEEP 蜂鳴器 : 發出音樂聲
+
 ![](https://i.imgur.com/q7p3Y2U.png)
 
 ### Function description:
