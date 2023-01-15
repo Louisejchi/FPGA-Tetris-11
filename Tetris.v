@@ -5,7 +5,7 @@
 					output beep);
 	// divide frequency
 	wire CLK_div_display, CLK_div_drop;
-	wire CLK_div_display_f, CLK_div_drop_f;
+	wire CLK_div_drop_f;
 	divfreqForDisplay F0(CLK, CLK_div_display);
 	divfreqForDrop F1(CLK, CLK_div_drop_f);
 	// get a new block
