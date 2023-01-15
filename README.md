@@ -91,10 +91,10 @@ module divfreq (
 * getBlock.v
 > 取得隨機方塊 
 ```verilog!
-module getBlock(	
+module getBlock( 
                 input enable, // 當 enable=1 時, 輸出一個亂數
                       CLK, // 時脈
-                output [2:0] num // 選擇第幾種方塊掉落
+                output [2:0] num // 輸出亂數
 );
 ```
 
