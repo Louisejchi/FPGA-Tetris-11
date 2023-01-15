@@ -55,14 +55,6 @@ module divfreqForDrop (
                        input CLK,// 輸入的時脈,
                        output reg CLK_div // 除頻後的時脈
 );
-```
-> 方塊左右、旋轉的除頻器
-```verilog!
-module divfreqForMove (
-                       input CLK,// 輸入的時脈,
-                       output reg CLK_div // 除頻後的時脈
-);
-```
 > 遊戲開始前動畫用的除頻器
 ```verilog!
 module divfreqForStart (
